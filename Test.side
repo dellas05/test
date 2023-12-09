@@ -1,0 +1,96 @@
+{
+  "id": "b341bf8c-3e13-4cfb-87f6-038b1fcc1ce0",
+  "version": "2.0",
+  "name": "Test",
+  "url": "https://guru.qahacking.ru/index.php/magazin",
+  "tests": [{
+    "id": "d70d23bb-e5ea-4438-a5a8-2341b7290e8b",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "64cc75e5-eca2-4607-81d6-564f46813040",
+    "name": "1",
+    "commands": [{
+      "id": "406f9454-c61f-481c-89a2-d81b4f53146b",
+      "comment": "",
+      "command": "open",
+      "target": "https://guru.qahacking.ru/index.php/magazin",
+      "targets": [],
+      "value": "https://guru.qahacking.ru/index.php/magazin"
+    }, {
+      "id": "ca4d32b2-41bc-4673-9dce-c1fc80a37b89",
+      "comment": "",
+      "command": "click",
+      "target": "name=order",
+      "targets": [],
+      "value": "select id"
+    }, {
+      "id": "141ae77a-51d9-4e9a-83d6-f06365d20543",
+      "comment": "",
+      "command": "select",
+      "target": "name=order",
+      "targets": [],
+      "value": "Популярность"
+    }, {
+      "id": "dd0aeb58-dfb3-4c38-b2b9-2c73c4a824e1",
+      "comment": "",
+      "command": "assertSelectedLabel",
+      "target": "name=order",
+      "targets": [],
+      "value": "Популярность"
+    }]
+  }, {
+    "id": "c27e0053-b413-4e98-a0ff-88af3f7057c9",
+    "name": "2",
+    "commands": []
+  }, {
+    "id": "f65aadeb-99b5-40c6-8eac-977afe23862f",
+    "name": "4",
+    "commands": [{
+      "id": "9d8f552a-96eb-4f1e-9327-5a7ac86fc27a",
+      "comment": "",
+      "command": "open",
+      "target": "https://guru.qahacking.ru/index.php/magazin",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "966b8b40-006c-4fd5-b0f8-789129450246",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1056x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ee96202-9268-4022-b1f6-bfd343a5c899",
+      "comment": "",
+      "command": "click",
+      "target": "id=order",
+      "targets": [
+        ["id=order", "id"],
+        ["name=order", "name"],
+        ["css=#order", "css:finder"],
+        ["xpath=//select[@id='order']", "xpath:attributes"],
+        ["xpath=//form[@id='sort_count']/div/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e87bab96-8235-4fdc-ad78-acd477509e2c",
+      "comment": "",
+      "command": "select",
+      "target": "id=order",
+      "targets": [],
+      "value": "label=Дата"
+    }]
+  }],
+  "suites": [{
+    "id": "7bd03535-d5e5-48e2-837a-730eb7c990cb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d70d23bb-e5ea-4438-a5a8-2341b7290e8b"]
+  }],
+  "urls": ["https://guru.qahacking.ru/index.php/magazin"],
+  "plugins": []
+}
